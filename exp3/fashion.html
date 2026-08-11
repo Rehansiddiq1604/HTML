@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fashion</title>
+
+<!-- Stylish Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    background: linear-gradient(to right, #E6E6FA, #ADD8E6);
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:20px;
+}
+
+/* Notification */
+#notification{
+    position:fixed;
+    top:-80px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#28a745;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    font-family:'Poppins', sans-serif;
+    transition:0.5s;
+    box-shadow:0 5px 10px rgba(0,0,0,0.3);
+    z-index:1000;
+}
+
+h1{
+    font-family:'Cinzel', serif;
+    color:darkblue;
+    font-size:42px;
+    text-shadow:3px 3px 6px gray;
+}
+
+h2{
+    font-family:'Cinzel', serif;
+    color:#800080;
+    font-size:30px;
+}
+
+h3{
+    font-family:'Cinzel', serif;
+    color:#4B0082;
+    font-size:24px;
+}
+
+img{
+    border-radius:15px;
+    border:4px solid white;
+    box-shadow:0 6px 12px rgba(0,0,0,0.3);
+}
+
+table{
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 12px rgba(0,0,0,0.3);
+}
+
+td{
+    padding:12px 20px;
+    font-size:17px;
+}
+
+p{
+    width:700px;
+    font-size:18px;
+    line-height:30px;
+}
+
+ol{
+    display:inline-block;
+    text-align:left;
+    font-size:18px;
+}
+
+video{
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.3);
+}
+
+input{
+    padding:12px 25px;
+    font-size:16px;
+    font-weight:bold;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    color:white;
+    transition:0.3s;
+}
+
+.purchase{
+    background:#28a745;
+}
+
+.purchase:hover{
+    background:#1e7e34;
+    transform:scale(1.05);
+}
+
+.back{
+    background:#007BFF;
+}
+
+.back:hover{
+    background:#0056b3;
+    transform:scale(1.05);
+}
+
+</style>
+
+<script>
+
+function purchase(){
+
+    var notify=document.getElementById("notification");
+
+    notify.style.top="20px";
+
+    setTimeout(function(){
+        notify.style.top="-80px";
+    },3000);
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="notification">
+    ✅ Successfully Purchased!
+</div>
+
+<center>
+
+<h1>MEN'S FASHION</h1>
+
+<h2>Men's Casual Shirt</h2>
+
+<img src="mens.jpg" width="500" height="350">
+
+<br><br>
+
+<table border="1">
+
+<tr>
+<td><b>Product Name</b></td>
+<td>Men's Casual Shirt</td>
+</tr>
+
+<tr>
+<td><b>Price</b></td>
+<td>₹999</td>
+</tr>
+
+<tr>
+<td><b>Brand</b></td>
+<td>Levi's</td>
+</tr>
+
+<tr>
+<td><b>Size</b></td>
+<td>S, M, L, XL</td>
+</tr>
+
+<tr>
+<td><b>Material</b></td>
+<td>100% Cotton</td>
+</tr>
+
+<tr>
+<td><b>Color</b></td>
+<td>Blue</td>
+</tr>
+
+</table>
+
+<h3>Description</h3>
+
+<p>
+This premium men's casual shirt is made from high-quality cotton fabric, offering superior comfort and a stylish appearance. It is perfect for college, office, parties, casual outings, and everyday wear. The breathable material ensures all-day comfort while maintaining a fashionable look.
+</p>
+
+<h3>Features</h3>
+
+<ol>
+<li>👕 100% Premium Cotton Fabric</li>
+<li>😊 Comfortable Regular Fit</li>
+<li>📏 Available in S, M, L and XL Sizes</li>
+<li>🧺 Easy to Wash & Maintain</li>
+<li>✨ Stylish Modern Design</li>
+<li>💯 High Quality Stitching</li>
+</ol>
+
+<h3>Product Video</h3>
+
+<video width="450" controls>
+    <source src="vid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<br><br><br>
+
+<input type="button" value="🛒 Purchase" class="purchase" onclick="purchase()">
+
+&nbsp;&nbsp;
+
+<a href="category.html">
+    <input type="button" value="⬅ Back" class="back">
+</a>
+
+</center>
+
+</body>
+</html>
