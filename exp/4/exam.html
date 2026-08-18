@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Examination</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f5f5dc;
+        }
+
+        .exam {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #800000;
+        }
+
+        h1 {
+            text-align: center;
+            color: #800000;
+        }
+
+        .question {
+            margin-bottom: 18px;
+        }
+
+        .question p {
+            font-weight: bold;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            color: white;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background-color: #800000;
+        }
+
+        input[type="reset"] {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Home button goes back to Login page -->
+<a href="login.html" style="
+    background-color: #800000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+">
+    Home
+</a>
+
+<div class="exam">
+
+    <h1>Internet Programming Quiz</h1>
+
+    <form>
+
+        <div class="question">
+            <p>1. Which tag is used to create a paragraph?</p>
+            <input type="radio" name="q1"> &lt;p&gt;<br>
+            <input type="radio" name="q1"> &lt;h1&gt;<br>
+            <input type="radio" name="q1"> &lt;br&gt;<br>
+            <input type="radio" name="q1"> &lt;h2&gt;<br>
+        </div>
+
+        <div class="question">
+            <p>2. Which language is used to style web pages?</p>
+            <input type="radio" name="q2"> HTML<br>
+            <input type="radio" name="q2"> CSS<br>
+            <input type="radio" name="q2"> SQL<br>
+            <input type="radio" name="q2"> C<br>
+        </div>
+
+        <div class="question">
+            <p>3. Which tag is used to create an unordered list?</p>
+            <input type="radio" name="q3"> &lt;ul&gt;<br>
+            <input type="radio" name="q3"> &lt;ol&gt;<br>
+            <input type="radio" name="q3"> &lt;li&gt;<br>
+            <input type="radio" name="q3"> &lt;tr&gt;<br>
+        </div>
+
+        <div class="question">
+            <p>4. Which attribute gives alternative text for an image?</p>
+            <input type="radio" name="q4"> alt<br>
+            <input type="radio" name="q4"> src<br>
+            <input type="radio" name="q4"> href<br>
+            <input type="radio" name="q4"> nav<br>
+        </div>
+
+        <div class="question">
+            <p>5. Which CSS property changes text size?</p>
+            <input type="radio" name="q5"> font-size<br>
+            <input type="radio" name="q5"> text-size<br>
+            <input type="radio" name="q5"> font-color<br>
+            <input type="radio" name="q5"> table-border<br>
+        </div>
+
+        <div class="question">
+            <p>6. Which tag is used to create a table?</p>
+            <input type="radio" name="q6"> &lt;table&gt;<br>
+            <input type="radio" name="q6"> &lt;tr&gt;<br>
+            <input type="radio" name="q6"> &lt;td&gt;<br>
+            <input type="radio" name="q6"> &lt;ul&gt;<br>
+        </div>
+
+        <div class="question">
+            <p>7. Which tag is used for a line break?</p>
+            <input type="radio" name="q7"> &lt;br&gt;<br>
+            <input type="radio" name="q7"> &lt;break&gt;<br>
+            <input type="radio" name="q7"> &lt;line&gt;<br>
+            <input type="radio" name="q7"> &lt;nav&gt;<br>
+        </div>
+
+        <div class="question">
+            <p>8. Which CSS property changes the background color?</p>
+            <input type="radio" name="q8"> background-color<br>
+            <input type="radio" name="q8"> color<br>
+            <input type="radio" name="q8"> bgcolor<br>
+            <input type="radio" name="q8"> bcolor<br>
+        </div>
+
+        <div class="question">
+            <p>9. Which tag defines a list item?</p>
+            <input type="radio" name="q9"> &lt;li&gt;<br>
+            <input type="radio" name="q9"> &lt;item&gt;<br>
+            <input type="radio" name="q9"> &lt;list&gt;<br>
+            <input type="radio" name="q9"> &lt;lst&gt;<br>
+        </div>
+
+        <div class="question">
+            <p>10. Which CSS property makes text bold?</p>
+            <input type="radio" name="q10"> font-weight<br>
+            <input type="radio" name="q10"> font-style<br>
+            <input type="radio" name="q10"> text-bold<br>
+            <input type="radio" name="q10"> field-bold<br>
+        </div>
+
+        <input type="submit" value="Submit Quiz">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</div>
+
+</body>
+</html>
