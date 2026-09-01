@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Tracking</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #E6E6FA;
+            margin-top: 80px;
+        }
+
+        .box {
+            width: 400px;
+            margin: auto;
+            padding: 25px;
+            background-color: white;
+            border: 1px solid #cccccc;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333399;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 250px;
+            padding: 8px;
+            margin: 8px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 25px;
+            background-color: #333399;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h2>Session Tracking using Java Servlet</h2>
+
+        <form action="WelcomeServlet" method="post">
+
+            Username:
+            <input type="text" name="uname" required>
+            <br>
+
+            Password:
+            <input type="password" name="password" required>
+            <br><br>
+
+            <input type="submit" value="Login">
+
+        </form>
+
+    </div>
+
+</body>
+</html>
