@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Details</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f4f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .box {
+            width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #999;
+        }
+
+        h1 {
+            text-align: center;
+            color: #176b87;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 25px;
+            background-color: #176b87;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d4f66;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            background-color: #176b87;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #aaa;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f8fa;
+        }
+    </style>
+
+    <script>
+        function loadCourses() {
+
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.onreadystatechange = function() {
+
+                if (this.readyState == 4 && this.status == 200) {
+
+                    var xml = this.responseXML;
+
+                    var courses = xml.getElementsByTagName("course");
+
+                    var output = "<table>";
+
+                    output += "<tr>";
+                    output += "<th>Course Code</th>";
+                    output += "<th>Course Name</th>";
+                    output += "<th>Instructor</th>";
+                    output += "<th>Duration</th>";
+                    output += "<th>Mode</th>";
+                    output += "</tr>";
+
+                    for (var i = 0; i < courses.length; i++) {
+
+                        var course = courses[i];
+
+                        var code = course.getElementsByTagName("code")[0].childNodes[0].nodeValue;
+
+                        var name = course.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+
+                        var instructor = course.getElementsByTagName("instructor")[0].childNodes[0].nodeValue;
+
+                        var duration = course.getElementsByTagName("duration")[0].childNodes[0].nodeValue;
+
+                        var mode = course.getElementsByTagName("mode")[0].childNodes[0].nodeValue;
+
+                        output += "<tr>";
+
+                        output += "<td>" + code + "</td>";
+                        output += "<td>" + name + "</td>";
+                        output += "<td>" + instructor + "</td>";
+                        output += "<td>" + duration + "</td>";
+                        output += "<td>" + mode + "</td>";
+
+                        output += "</tr>";
+                    }
+
+                    output += "</table>";
+
+                    document.getElementById("courseData").innerHTML = output;
+                }
+            };
+
+            xhttp.open("GET", "courses.xml", true);
+
+            xhttp.send();
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Course Details</h1>
+
+    <button onclick="loadCourses()">Load Courses</button>
+
+    <div id="courseData"></div>
+
+</div>
+
+</body>
+</html>

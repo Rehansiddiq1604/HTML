@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<courses>
+
+    <course>
+        <code>C101</code>
+        <name>Web Development</name>
+        <instructor>Arun Kumar</instructor>
+        <duration>8 Weeks</duration>
+        <mode>Online</mode>
+    </course>
+
+    <course>
+        <code>C102</code>
+        <name>Python Programming</name>
+        <instructor>Priya Sharma</instructor>
+        <duration>10 Weeks</duration>
+        <mode>Online</mode>
+    </course>
+
+    <course>
+        <code>C103</code>
+        <name>Database Management</name>
+        <instructor>Rahul Kumar</instructor>
+        <duration>6 Weeks</duration>
+        <mode>Offline</mode>
+    </course>
+
+    <course>
+        <code>C104</code>
+        <name>Cloud Computing</name>
+        <instructor>Divya Raj</instructor>
+        <duration>8 Weeks</duration>
+        <mode>Online</mode>
+    </course>
+
+    <course>
+        <code>C105</code>
+        <name>Java Programming</name>
+        <instructor>Karthik Anand</instructor>
+        <duration>12 Weeks</duration>
+        <mode>Offline</mode>
+    </course>
+
+    <course>
+        <code>C106</code>
+        <name>Data Science</name>
+        <instructor>Neha Singh</instructor>
+        <duration>10 Weeks</duration>
+        <mode>Online</mode>
+    </course>
+
+    <course>
+        <code>C107</code>
+        <name>Cyber Security</name>
+        <instructor>Vijay Raj</instructor>
+        <duration>8 Weeks</duration>
+        <mode>Online</mode>
+    </course>
+
+    <course>
+        <code>C108</code>
+        <name>Artificial Intelligence</name>
+        <instructor>Ananya Das</instructor>
+        <duration>12 Weeks</duration>
+        <mode>Offline</mode>
+    </course>
+
+    <course>
+        <code>C109</code>
+        <name>Mobile Application Development</name>
+        <instructor>Rohit Verma</instructor>
+        <duration>10 Weeks</duration>
+        <mode>Online</mode>
+    </course>
+
+    <course>
+        <code>C110</code>
+        <name>Software Engineering</name>
+        <instructor>Meena Joseph</instructor>
+        <duration>6 Weeks</duration>
+        <mode>Offline</mode>
+    </course>
+
+</courses>
