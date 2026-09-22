@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping Order</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f4f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .box {
+            width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #999;
+        }
+
+        h2 {
+            text-align: center;
+            color: #176b87;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #176b87;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d4f66;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h2>Place Your Order</h2>
+
+    <form action="insert_order.php" method="POST">
+
+        <label>Customer Name</label>
+        <input type="text" name="customer_name" required>
+
+        <label>Product Name</label>
+        <input type="text" name="product_name" required>
+
+        <label>Quantity</label>
+        <input type="number" name="quantity" min="1" required>
+
+        <label>Price</label>
+        <input type="number" name="price" step="0.01" min="0" required>
+
+        <input type="submit" value="Place Order">
+
+    </form>
+
+</div>
+
+</body>
+</html>
